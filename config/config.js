@@ -19,14 +19,14 @@ function getUserHome() {
   return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
 }
 
-var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight-bitzeny');
+var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight-vipstarcoin');
 
 if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
   db = home;
   port = '3000';
-  b_port = '9252';
-  p2p_port = '9253';
+  b_port = '31916';
+  p2p_port = '31915';
 } else {
   env = 'testnet';
   db = home + '/testnet';
@@ -57,9 +57,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\BitZeny\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/BitZeny/';
-  if (isLinux) dataDir = process.env.HOME + '/.bitzeny/';
+  if (isWin) dataDir = '%APPDATA%\\VIPSTARCOIN\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/VIPSTARCOIN/';
+  if (isLinux) dataDir = process.env.HOME + '/.VIPSTARCOIN/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 
