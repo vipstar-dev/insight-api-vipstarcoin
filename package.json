@@ -48,7 +48,7 @@
     "base58-native": "0.1.2",
     "bignum": "*",
     "morgan": "*",
-    "bitcore": "git://github.com/BitzenyCoreDevelopers/bitcore-bitzeny.git",
+    "bitcore": "git://github.com/VIPSTARCOIN/VIPSTARCOIN-bitcore.git",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "^2.3.0",
